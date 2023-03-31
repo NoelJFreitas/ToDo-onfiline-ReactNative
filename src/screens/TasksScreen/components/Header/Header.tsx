@@ -1,10 +1,10 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text, StyleSheet, ViewProps} from 'react-native';
 import colors from 'src/styles/colors';
 
-export function Header() {
+export function Header({style}: ViewProps) {
   return (
-    <View>
+    <View style={style}>
       <Text style={styles.title}>Ola, Noel!</Text>
       <Text style={styles.message}>Essas são suas tarefas.</Text>
     </View>
